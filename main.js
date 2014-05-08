@@ -152,3 +152,25 @@ var dog = {
 dog.talk()
 */
 
+var makeMeLaugh = {
+	animals: ["wolf", "unicorn", "russian bear", "hedgehog"],
+	shoes: ["flip-flops", "high-heels", "bananas"],
+	transportation: ["unicycle", "motorcycle", "horse", "llama"],
+	getChuckle: function(animalKey, shoeKey, transportKey) {
+ 		var animalKey = Math.floor(Math.random() * this.animals.length);
+ 		var shoeKey = Math.floor(Math.random() * this.shoes.length);
+ 		var transportKey = Math.floor(Math.random() * this.transportation.length);
+		console.log('Holy shit! I just saw a ' + this.animals[animalKey] + ' wearing ' + this.shoes[shoeKey] + ' while riding a ' + this.transportation[transportKey]);
+	}
+};
+
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+makeMeLaugh.getChuckle();
+
