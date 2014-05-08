@@ -1,6 +1,8 @@
+/*
 console.log("How are you doing today?");
 var userAnswer = prompt("I'm good. How are you?");
 	console.log("Yea man, I'm " + userAnswer + " as well."); 
+
 
 var bananas = 5,
 	oranges = 7,
@@ -8,11 +10,14 @@ var bananas = 5,
   
 console.log("You have " + allFruit + " pieces of fruit.");
 var people = prompt("Can you evenly share all the fruit? Enter # of friends you want to share with.");
- if (allFruit % people === 0) {
- 	console.log("You will make everybody happy!");
- } else {
- 	console.log("You won't be abe to share equally.");
- };
+	if (typeof people == "string") {
+		return people;
+	} else if (allFruit % people == 0) {
+		console.log("You will make everybody happy!");
+	} else {
+		console.log("You won't be abe to share equally.");
+	};
+
 
 var myStringObject = new String('Heather')
 console.log(myStringObject);
@@ -27,8 +32,15 @@ var Person = function(ageKey, livingKey, genderKey) {
 var Tim = new Person(0, 1, 4);
 console.log(Tim);
 
-var cheeses = ["Brie", "Camembert", "Queso Fresco"]
+/*var cheesePlate = ["Brie", "Camembert", "Queso Fresco"];
+cheesePlate.push('Cheddar');
 
+function firstThree (cheesePlate) {
+	return cheesePlate[cheesePlate.length - 1];
+console.log(cheesePlate);
+*/
+
+/*
 var breadSlices = {
 	openFace: 1,
 	club: 3,
@@ -38,41 +50,56 @@ for (var key in breadSlices) {
 	console.log("A " + key + " sandwich has " + breadSlices[key] + " slices of bread." );
 }
 
-/*
+/* ============================
+Writing Objects & Arrays in different ways
+===============================
+
+========Object - 1========
+
 var breadSlices = {}
 	breadSlices.openFace = 1;
 	breadSlices.club = 3;
 	breadSlices.rueben = 2;
 
-var pets = new Array ();
-	pets[0] = 'Pepperjack';
-	pets[1] = 'Muenster';
+=======Object - 2 "Object Literal" ====
 
-var pets = ['Pepperjack', 'Muenster']; */
-/*
 var mascots = {
 	panthers: "Sir Purr",
 	bobcats: "Rufus",
 	hornets: "Hugo",
 }
 
-var mascots = new Array();
-	mascots.push("Sir Purr");
-	mascots.push("Rufus");
-	mascots.push("Hugo");
+var socialMedia = {
+	twitter: "twitter.com",
+	facebook: "facebook.com"
+} 
 
+=======Object - 3 ============
 
 var mascots = {};
 	mascots['panthers'] = "Sir Purr";
 	mascots['bobcats'] = "Rufus";
 	mascots['hornets'] = "Hugo";
 
-var socialMedia = {
-	twitter: "twitter.com",
-	facebook: "facebook.com"
-} 
+=======Array - 1==========
+
+var pets = new Array ();
+	pets[0] = 'Pepperjack';
+	pets[1] = 'Muenster';
+
+======Array - 2 ===========
+
+var pets = ['Pepperjack', 'Muenster'];
+
+=======Array - 3 ==========
+
+var mascots = new Array();
+	mascots.push("Sir Purr");
+	mascots.push("Rufus");
+	mascots.push("Hugo");
 */
 
+/*
 var cupOfJoe = {
 	bean: ["Arabica", "Robusta", "Kopi Luwak"], 
 	brew: ["French press", "Filter brewing"],
@@ -109,5 +136,19 @@ var cupOfJoe = {
 
 cupOfJoe.order(0, 1);
 cupOfJoe.order(1000, 1);
+cupOfJoe.order(2, 500);
 cupOfJoe.listBrews(); 
 cupOfJoe.listBeans();
+
+/*
+
+var dog = {
+		legs: 4,
+		tail: 1,
+		talk: function() {
+		alert("woof");
+		}
+	};
+dog.talk()
+*/
+
