@@ -156,7 +156,7 @@ var makeMeLaugh = {
 	animals: ["wolf", "unicorn", "russian bear", "hedgehog"],
 	shoes: ["flip-flops", "high-heels", "bananas"],
 	transportation: ["unicycle", "motorcycle", "horse", "llama"],
-	getChuckle: function(animalKey, shoeKey, transportKey) {
+	getChuckle: function() {
  		var animalKey = Math.floor(Math.random() * this.animals.length);
  		var shoeKey = Math.floor(Math.random() * this.shoes.length);
  		var transportKey = Math.floor(Math.random() * this.transportation.length);
