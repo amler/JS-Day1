@@ -97,6 +97,21 @@ var mascots = new Array();
 	mascots.push("Sir Purr");
 	mascots.push("Rufus");
 	mascots.push("Hugo");
+
+// Variation of same push array
+
+var mascots = [];
+	mascots.push("hornets", "Sir Purr", "Wizards", "monkeys");
+console.log(mascots[mascots.length - 1]);
+console.log(mascots.length);
+
+// User prompt array push//
+var userPromptArray =[];
+	userPromptArray.push(prompt("how old are you?"));
+	userPromptArray.push(prompt("favorite color?"));
+	userPromptArray.push(prompt("year born?"));
+console.log(userPromptArray);
+
 */
 
 /*
@@ -177,7 +192,13 @@ makeMeLaugh.getChuckle();
 makeMeLaugh.getChuckle();
 */
 
-var num = prompt("enter a number");
-var n = num.toString();
-console.log(n + " bananas");
+/* ============== Using join on arrayss ============
+var myString1 = mascots.join();
+var myString2 = mascots.join(", ");
+var myString3 = mascots.join(" + ");
+console.log(myString1);
+console.log(myString2);
+console.log(myString3);
+*/
+
 
