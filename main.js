@@ -152,6 +152,8 @@ var dog = {
 dog.talk()
 */
 
+/*
+
 var makeMeLaugh = {
 	animals: ["wolf", "unicorn", "russian bear", "hedgehog"],
 	shoes: ["flip-flops", "high-heels", "bananas"],
@@ -173,4 +175,9 @@ makeMeLaugh.getChuckle();
 makeMeLaugh.getChuckle();
 makeMeLaugh.getChuckle();
 makeMeLaugh.getChuckle();
+*/
+
+var num = prompt("enter a number");
+var n = num.toString();
+console.log(n + " bananas");
 
